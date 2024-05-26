@@ -1,0 +1,9 @@
+aiogram==3.6.0
+black==24.4.2
+fire==0.6.0
+flake8==7.0.0
+openai==1.30.3
+pytest==8.2.1
+SQLAlchemy==2.0.30
+tiktoken==0.7.0
+transformers==4.41.1

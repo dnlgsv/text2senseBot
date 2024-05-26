@@ -1,0 +1,10 @@
+-r requirements.txt
+black==24.4.2
+flake8==7.0.0
+mypy==1.10.0
+pre-commit==3.7.1
+pylint==3.2.2
+pytest==8.2.1
+types-all==1.0.0
+usort==1.0.8
+wemake-python-styleguide==0.19.2
