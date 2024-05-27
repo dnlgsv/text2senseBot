@@ -20,7 +20,8 @@ repos:
     - id: check-added-large-files
       args: [--maxkb=500]
 
-- repo: local
+- repo: https://github.com/pycqa/flake8
+  rev: 7.0.0
   hooks:
     - id: flake8
       name: flake8
@@ -29,7 +30,8 @@ repos:
       types: [python]
       stages: [commit]
 
-- repo: local
+- repo: https://github.com/psf/black
+  rev: 24.4.2
   hooks:
     - id: black
       name: black
@@ -44,7 +46,8 @@ repos:
         - --include=\.pyi?$
         - --diff
 
-- repo: local
+- repo: https://github.com/pycqa/isort
+  rev: 5.13.2
   hooks:
     - id: isort
       name: isort
@@ -53,3 +56,14 @@ repos:
       types: [python]
       stages: [commit]
       args: [--profile=black]
+
+# - repo: https://github.com/pre-commit/mirrors-mypy
+#   rev: 1.9.0
+#   hooks:
+#     - id: mypy
+#       name: mypy
+#       entry: mypy
+#       language: python
+#       types: [python]
+#       stages: [commit]
+#       args: [--show-error-codes, --pretty]
